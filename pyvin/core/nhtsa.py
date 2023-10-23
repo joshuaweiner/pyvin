@@ -5,7 +5,6 @@ Core Functionality
 import requests
 
 from pyvin.core.url import UrlMixin
-from pyvin.core.utils import validate_vin, camel_to_snake
 
 
 class NHTSA(UrlMixin):
