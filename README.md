@@ -17,7 +17,7 @@ Installing PyVin is a straightforward process using `setup.py`.
 1. Clone the PyVin repository from GitHub:
 
 ```bash
-git clone https://github.com/yourusername/pyvin.git
+git clone https://github.com/joshuaweiner/pyvin.git
 ```
    
 2. Navigate to the project directory:
