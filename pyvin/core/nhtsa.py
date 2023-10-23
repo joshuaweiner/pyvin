@@ -8,20 +8,6 @@ from pyvin.core.url import UrlMixin
 from pyvin.core.utils import validate_vin, camel_to_snake
 
 
-class InvalidVINError(ValueError):
-    pass
-
-
-class Vin:
-    def __get__(self, obj, objtype=None):
-        return self.value
-
-    def __set__(self, obj, value):
-        if not validate_vin(value):
-            raise InvalidVINError(f'InvalidVINError, InvalidVin: {value}')
-        self.value = value
-
-
 class NHTSA(UrlMixin):
 
     PACKET_FORMAT_JSON = 'json'
